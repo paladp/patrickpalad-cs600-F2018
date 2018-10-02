@@ -1,0 +1,153 @@
+\documentclass[11pt]{article}
+
+\newcommand{\assignmentduedate}{October 2}
+\newcommand{\assignmentassignedate}{September 18}
+\newcommand{\assignmentnumber}{Two}
+
+\newcommand{\labyear}{2018}
+\newcommand{\labday}{Tuesday}
+\newcommand{\labtime}{2:30 pm}
+
+\newcommand{\assigneddate}{Assigned: \labday, \assignmentassignedate, \labyear{}}
+\newcommand{\duedate}{Due: \labday, \assignmentduedate, \labyear{} at \labtime{}}
+
+\usepackage{pifont}
+\newcommand{\checkmark}{\ding{51}}
+\newcommand{\naughtmark}{\ding{55}}
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  columns=flexible,
+  breaklines=true
+}
+
+\usepackage{fancyhdr}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\rhead{Computer Science 600}
+\lhead{Project Assignment \assignmentnumber{}}
+\rfoot{Page \thepage}
+\lfoot{\duedate}
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\newcommand{\projecttitle}[1]
+{
+  \begin{center}
+    \begin{center}
+      \bf
+      CMPSC 600\\Senior Thesis I\\
+      Fall 2018\\
+      \medskip
+    \end{center}
+    \bf
+    #1
+  \end{center}
+}
+
+\usepackage{xspace}
+
+%% Words that we need to spell consistently
+\newcommand{\website}{web site\xspace}
+\newcommand{\webpage}{web page\xspace}
+\newcommand{\webpages}{web pages\xspace}
+\newcommand{\websites}{web sites\xspace}
+\newcommand{\stylesheet}{style sheet\xspace}
+\newcommand{\stylesheets}{style sheets\xspace}
+\newcommand{\Viewport}{Viewport\xspace}
+\newcommand{\viewport}{viewport\xspace}
+\newcommand{\viewports}{viewports\xspace}
+\newcommand{\XPath}{XPath\xspace}
+\newcommand{\xpath}{\XPath\xspace}
+\newcommand{\etal}{et al.\xspace}
+
+%% Numbers of things
+\newcommand{\numquestions}{two\xspace}
+\newcommand{\numtypes}{five\xspace}
+\newcommand{\numalgorithms}{four\xspace}
+\newcommand{\numtrials}{30\xspace}
+\newcommand{\numsubjects}{25\xspace}
+\newcommand{\maxnumhtmlelements}{1469\xspace}
+\newcommand{\minnumhtmlelements}{41\xspace}
+\newcommand{\totalfailures}{24\xspace}
+\newcommand{\totalviewports}{192\xspace}
+\newcommand{\maxpagefailures}{5\xspace}
+\newcommand{\numpageswithfailures}{13\xspace}
+\newcommand{\numpagesthatarefast}{15\xspace}
+\newcommand{\numtruepositives}{192\xspace}
+\newcommand{\numtwoormorefailures}{8\xspace}
+\newcommand{\numstackoverflowquestions}{961,157\xspace}
+\newcommand{\wminvalue}{400}
+\newcommand{\wmaxvalue}{1400}
+\newcommand{\wpairvalue}{(\wminvalue,\wmaxvalue)}
+
+%% Tools
+\newcommand{\redecheck}{{\sc ReDeCheck}\xspace}
+\newcommand{\xpert}{{\sc X-Pert}}
+\newcommand{\gwali}{{\sc gwali}}
+\newcommand{\cornipickle}{{\sc Cornipickle}}
+\newcommand{\wraith}{{\sc Wraith}}
+\newcommand{\galen}{{\sc Galen}}
+\newcommand{\fighting}{{\sc Fighting\,Layout\,Bugs}}
+\newcommand{\responsivepx}{{\sc ResponsivePX}}
+\newcommand{\redecheckexplained}{\redecheck~(REsponsive DEsign CHECKer, pronounced ``Ready Check'')\xspace}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\projecttitle{Project \assignmentnumber{} \\ \assigneddate{} \\ \duedate{}}
+
+% TODO: Delete this title and add one for your senior thesis
+\section*{Impact of Economic Policy on Income Distribution: An Agent Based Approach}
+
+% TODO: Delete this abstract and include your own thesis abstract
+\section*{Senior Thesis Abstract}
+
+Arguments surrounding the idea of a living wage and its legitimacy as an economic policy have been garnering
+increasing visibility within the general public. The gap between socioeconomic classes is widening, and
+real wages are declining, and solutions aimed at tackling poverty, unemployment, and production are constantly
+considered in a post financial crisis United States. Stylized facts and intuitive theory exist that can help
+inform policy decisions, but strong predictive models are lacking. Related fields of economics - specifically
+finance - have found success in computational agent based simulations to aide in the development and support
+of theories and models. This paper aims to extend the work of agent based simulation to observe the impact of
+minimum wage and other economic policies on the income distributions in an economy. The model used will replicate
+an economy using heterogeneous agents - representing households, firms, banks, etc. - whose actions with each other
+and their environment will be based on existing economic research. Changes in the environment the agents operate in
+will represent the different economic policy options. The results of the simulation will provide insights into how
+different policies effect the characteristics of the agents in the simulation. In addition to providing insight into the
+effects of different policies, it will also further the literature by adding additional features to existing
+agent based models.
+
+
+% TODO: List your accomplishments towards demonstrating feasibility
+\section*{Demonstrations of Feasibility}
+
+\begin{enumerate}
+  \item First feasibility indicator: Related research
+A paper from Haldane et al. titled "Drawing on different disciplines: macroeconomic agent-based models" details
+the history of modeling in Macroeconomics, and discusses how agent based models are poised to tackle problems in
+economics that traditional stochastic general equilibrium models are less suited to address. These problems are
+those that require agent heterogeneity and involve markets that are not always in equilibrium, among others. I believe that
+a paper researching the topic of income distribution meets enough of these requirements that using an agent based
+approach would be feasible and yield useful results. Additionally, a paper from Caiani et al titled "Agent based-stock
+flow consistent macroeconomics: Towards a benchmark model" provides a detailed review of the common issues relating to
+agent based models, as well as providing a template model for researchers to use and extend to their particular question.
+I intend to rely on this paper for the basis of the model implemented in the simulation, and extend it to simulate specific
+agent actions and attributes relevant to a study of income distribution.
+  \item Second feasibility indicator: Possible implementations
+In order to implement the computational side of the research, I plan to first rely on NetLogo as a means of prototyping
+basic interactions between various agents, as well as familiarizing myself with the fundamental concepts of agent based
+systems. I plan on implementing the final program using Java. This is due to two reasons; first, Java is the language I am
+most comfortable using, and secondly, there is extensive support for this type of simulation through other Java packages and
+suites. For example Repast is a suite of Java packages for agent based modeling that has been under development for over a decade.
+JADE (Java Agent Development) is another similar framework.
+  \end{enumerate}
+\end{document}
