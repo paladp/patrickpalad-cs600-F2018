@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1538515105 "senior_thesis_status_update.tex" "/home/patrick/School/CS600/cs600-F2018-project2-starter/senior_thesis_status_update.pdf" "senior_thesis_status_update" 1538515105
-  "/etc/texmf/web2c/texmf.cnf" 1538507760 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/patrick/School/CS600/cs600-F2018-project2-starter/senior_thesis_status_update.aux" 1538515105 8 a94a2480d3289e625eea47cd1b285758 ""
+["pdflatex"] 1540159117 "senior_thesis_status_update.tex" "/home/patrickpalad/School/CS600/patrickpalad-cs600-F2018/status-update/senior_thesis_status_update.pdf" "senior_thesis_status_update" 1540159117
+  "/etc/texmf/web2c/texmf.cnf" 1540158875 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/home/patrickpalad/School/CS600/patrickpalad-cs600-F2018/status-update/senior_thesis_status_update.aux" 1540159117 8 a94a2480d3289e625eea47cd1b285758 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/symbol/psyr.tfm" 1136768653 1408 5937f58aa508ea2cea4901c07d10f5fe ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -30,13 +30,13 @@
   "/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty" 1454284088 4544 8b8f59969458e1c25e0559e8e0ced1a4 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1503343927 31343 93828589fb0cea665e553ee5a17ad2d4 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1538510894 127805 5c3c5fac7370b5e0b4000550316abe76 ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1538507763 718487 70f8d5e6cf348ae486c7d02cc53cd8b6 ""
-  "senior_thesis_status_update.aux" 1538515105 8 a94a2480d3289e625eea47cd1b285758 ""
-  "senior_thesis_status_update.tex" 1538515100 6813 1ef20d6eb9960fe5c7a8aad44bd932ee ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1540158880 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1540158887 3856804 a75c764e554be27e7dc91ae069568345 ""
+  "senior_thesis_status_update.aux" 1540159117 8 a94a2480d3289e625eea47cd1b285758 ""
+  "senior_thesis_status_update.tex" 1539882280 6813 1ef20d6eb9960fe5c7a8aad44bd932ee ""
   (generated)
-  "/home/patrick/School/CS600/cs600-F2018-project2-starter/senior_thesis_status_update.pdf"
-  "senior_thesis_status_update.log"
-  "senior_thesis_status_update.pdf"
-  "/home/patrick/School/CS600/cs600-F2018-project2-starter/senior_thesis_status_update.log"
   "senior_thesis_status_update.aux"
+  "/home/patrickpalad/School/CS600/patrickpalad-cs600-F2018/status-update/senior_thesis_status_update.log"
+  "senior_thesis_status_update.log"
+  "/home/patrickpalad/School/CS600/patrickpalad-cs600-F2018/status-update/senior_thesis_status_update.pdf"
+  "senior_thesis_status_update.pdf"
