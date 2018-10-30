@@ -129,15 +129,14 @@
 %   ********************************************************************
 
 \vspace*{-1.1in}
-\title{Title of Your Senior Thesis Proposal}  % CHANGE!
+\title{Impact of Minimum Wage Policy on Employment: An Agent Based Approach}  % CHANGE!
 
 % build the author section, making appropriate CHANGES
 \author{
-  Your Full Name\\  % CHANGE!
+  Patrick Louwie Flores Palad\\  % CHANGE!
   Department of Computer Science\\
   Allegheny College \\
-  {\tt youremail@allegheny.edu}  \\  % CHANGE!
-  \url{http://www.cs.allegheny.edu/~yourwebsite/} \\   % CHANGE!
+  {\tt paladp@allegheny.edu}  \\  % CHANGE!
   \vspace*{.1in} \today \\ \vspace*{.1in}
 }
 
@@ -156,6 +155,10 @@
 
 \begin{quote}
 
+  This paper proposes a senior thesis project that extends an agent based model
+  detailed by Caiani et al. in order to explore the impacts of minimum wage increases
+  and decreases on the employment level, employment growth, and income distribution
+  of 
   Provide a concise summary of your proposed research. Remember that the abstract
   is {\it not\/} an introduction, it is a {\it summary\/} of the entire document.
   It makes sense to wait to write the abstract until the rest of the document has
@@ -523,33 +526,115 @@ in the ABM literature as a result of both using an ABM. The specifications of
 %   * Enter the text of your method of approach section here.          *
 %   ********************************************************************
 
-Use technical diagrams, equations, algorithms, and paragraphs of text to
-describe the research that you intend to complete. See the \LaTeX\ source file
-for the proposal to learn how Figure~\ref{intro-fig1} and Table~\ref{intro-tab1}
-were included. Be sure to number all figures and tables and to explicitly refer
-to them in your text.
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=5in]{flow.pdf}
-  \caption{Flow graph for proposal-writing}~\label{intro-fig1}
-\end{figure}
+In general, the high level method of this paper is to construct an ABM of an
+economy, run the simulation until a steady state has been reached, and then
+introduce a change in the minimum wage paid to households, and then to observe
+the changes in the employment levels, employment growth, and income distribution
+of the model. An ABM was chosen as the instrument to observe these changes and
+investigate the relationship between minimum wage and employment because it
+provides an environment where all the relevant data is obtainable, and variables
+can be held constant if necessary. Traditional economic theory is often made
+under the assumption that all other variables are unchanged, and that the agents
+are homogeneous, rational, and their behaviors aggregate easily ~\cite{Haldane-history-paper}.
+These models are useful, but their assumptions place them too far from reality.
+Empirical studies use real world data to investigate these kinds of relationships,
+but are limited to the data they have available, and are often not generalizable.
+ABMs provide a middle ground. They are similar to traditional models in that they
+do not have to be tailored to one specific country, and aim to present an
+abstraction and explanation of an observed phenomenon in the economy. However,
+ABMs are not limited to the assumptions most economic models have to make.
+Similarly, they allow researchers to ask similar questions to those asked in
+empirical studies and observe changes in agent level variables.
 
-\begin{table}[htbp]
-  \centering
-  \begin{tabular}{|c||c|c|}
-    \hline
+The ABM will be based on the ABM proposed by Caiani et al. in their paper, and
+the first milestone of the research will be to replicate as close as possible the
+results presented in their paper. An exact explanation of the model can be found
+in their paper, and an overview is provided here. The model consists of households,
+firms, banks, a central bank, and a government  ~\cite{Caiani-benchmark-paper}.
+A more in depth explanation of their characteristics is as follows:
+\begin{itemize}
+  \item \textbf{Households:} In the benchmark, ``households [sell] their labor
+  to firms in exchange for wages, [and consume] and [save] in the form of banks`
+  deposits, receive a share of firms` and banks` profits as dividends,
+  [and]...receive a dole from the government, [and] pay taxes on their gross
+  income  ~\cite{Caiani-benchmark-paper}.`` The proposed research will extend
+  the benchmark by introducing wealth based consumption behaviors and thus
+  introduce a new layer of heterogeneity, as the household agents are not
+  ifferentiated by consumption behavior in the benchmark. Households have limited
+  information and adapt to the environment by looking at past values of employment
+  and price in order to set their consumption levels and asking wage  ~\cite{Caiani-benchmark-paper}.
+  \item \textbf{Firms:} The benchmark model includes two kinds of firms, consumption
+  firms and capital firms  ~\cite{Caiani-benchmark-paper}. Consumption firms
+  ``produce a homogeneous consumption good using labor and capital goods manufactured
+  by capital firms``, while capital firms ``produce a homogeneous capital good… ~\cite{Caiani-benchmark-paper}``
+  In addition, these firms are able to apply for loans and retain their profits  ~\cite{Caiani-benchmark-paper}.
+   The proposed research will extend the model by adding different kinds of
+   consumption goods, so that consumption firms will no longer produce homogeneous
+   consumption goods. This is in order to replicate the differentiation between
+   inferior, normal, and luxury goods. As described in the benchmark by Caiani et al.,
+   firms will follow an adaptive rule to plan the level of production, desired
+   demand for labor, prices of goods, level of additional investment. In general,
+   the adaptive rule looks at values of variables - like left over inventory,
+   expected wage, and productivity - in the previous simulation period and uses
+   them to generate the values for the current simulation period.
+ \item \textbf{Banks:} Banks ``[collect] deposits from households and firms,
+ [grant] loans to firms, [buy] bonds issued by the Government, [are constrained by]
+ capital and liquidity ratios, [and] may ask for cash advances to the Central Bank  ~\cite{Caiani-benchmark-paper}.
+ The proposed research does not plan to extend the behavior or design of the bank
+ agents from the benchmark.
+ \item \textbf{Government:} The Government is represented by a single agent that
+ ``hires public workers, [pays] unemployment benefits to households...holds an
+ account at the Central Bank, collects taxes, and issues bonds to cover its deficits
+  ~\cite{Caiani-benchmark-paper}.`` The proposed research does not plan to extend
+   the behavior or design of the Government agent from the benchmark.
+\item \textbf{Central Bank:} In the benchmark, the Central Bank ``issues legal
+currency, holds banks’ reserve accounts and the government account, accommodates
+banks` demand for cash advances at a fixed discount rate, and possibly buy
+government bonds which have not been purchased by banks
+~\cite{Caiani-benchmark-paper}.``The proposed research does not plan to
+extend the behavior or design of the Central Bank agent from the benchmark.
+\end{itemize}
 
-    \bf Task     & \bf Begin Date & \bf End Date \\ \hline\hline
-    First draft  & Now            & 20 Sept      \\ \hline
-    Second draft & 20 Sept        & 27 Sept      \\ \hline
-    Third draft  & 27 Sept        & 4 Oct        \\ \hline
-    Fourth draft & 4 Oct          & 11 Oct       \\ \hline
-    Fifth draft  & 11 Oct         & 18 Oct       \\ \hline
+During each period of the simulation, the agents interact broadly in these ways:
+\begin{itemize}
+\item Consumption firms interact with capital firms and both types determine their
+level of output, labor demanded, capital demanded, credit demanded, prices charged
+and wages paid  ~\cite{Caiani-benchmark-paper}.
+\item Firms interact with banks. Firms send requests for credit and banks evaluate
+them and give out credit to firms.
+\item Households interact with consumption firms by consuming their products
+\item Households interact with the government, consumption firms, and capital firms
+by looking for jobs, receiving wages, and being fired.
+\item Households and firms interact with banks through deposits, transfers, and loans.
+\end{itemize}
+Once the benchmark model has been implemented and the results have been replicated,
+information regarding the history and summary statistics of GDP, unemployment,
+investment, consumption, output and price levels will be recorded to serve as the
+base levels. Then the simulation will be run until a steady state has been reached
+ - that is, the simulated economy is not experiencing massive fluctuations in
+ measures like GDP, employment, consumption etc. Once the steady state has been
+ reached, a shock will be applied to the economy in the form of a price floor on
+ the wage paid to workers. This increase will be a percentage of the average wage
+ in the model during the steady state, and multiple runs of the simulation will
+ be observed with different percentage increases and decreases occurring in 20%
+ increments with a range from half the average to double the average wage. Each
+ increase and decrease will be run multiple times in order to ensure a high enough
+ sample size. For example, in Caiani et al., the simulation was run 100 times in
+ order to evaluate the results  ~\cite{Caiani-benchmark-paper}. At the end of each
+ of these runs, information about the history of GDP, unemployment, investment,
+ consumption, output, and price levels will be saved in order to compare to the
+ results to the base levels and to each other.
 
-  \end{tabular}
-  \caption{Illustrative Example of a Proposed Work Schedule}~\label{intro-tab1}
-\end{table}
+The model will be implemented in Java using a time discrete simulation where
+the agents take specific actions during specific times. There are three main
+libraries/frameworks that can be used to implement this kind of model, the Java
+Agent Based Modelling toolkit, Repast Simphony, and the Java Agent Development
+Framework. I intend to move forward with the Repast Simphony, but will keep the
+Java Agent Development Framework as an option should Repast Simphony prove cumbersome
+in the implementation of the ABM. Java was chosen as the implementation language
+due to the experience and familiarity of the research team.
+
 
 \section{Evaluation Strategy}
 \label{sec:evaluate}
@@ -557,15 +642,71 @@ to them in your text.
 %   ********************************************************************
 %   * Enter the text of your evaluation strategy section here.         *
 %   ********************************************************************
+The benchmark model will be evaluated using the same method outlined in Caiani
+et al. Since the model uses a balance sheet to keep track of stock variables
+the balance sheet of the economy will be checked at the end of each period in
+the simulation to ensure internal consistency  ~\cite{Caiani-benchmark-paper}.
+Secondly, the results of the model in terms of GDP, unemployment, investment,
+consumption, output, and price levels will be compared with real world trends
+(in the case of the benchmark paper, data from the United States economy was used)
+and will be considered successful if the results of the comparison are similar
+to the comparison done in the benchmark by Caini et al.
 
-Explain what steps you will take to evaluate your proposed method. If you intend
-to conduct experiments, then you must clearly define your evaluation metrics.
+Once the changes have been made to the behavior of firms and the types of goods
+produced by consumption firms, the same evaluation methods will be run again to
+check for any inconsistencies created through the addition of these extensions.
+A change in the consumption of households to respond to inferior, normal, and
+luxury goods should be represented by an increase in consumption of luxury goods
+as income and wealth increase, while consumption of inferior goods decreases.
+The behaviors of the household firms will be adjusted until this is seen in the
+historical record of consumption. Once the extensions of the model have been
+validated the minimum wage shock will be introduced. The results of the shock
+simulations will be validated with the balance sheet check as usual. Since the
+goal of the proposed research is to observe the impacts of this shock, the results
+of the shock simulation are not expected to be identical to the results of the
+base model.
+
+
+%   ********************************************************************
+%   * Enter the text of your research schedule section here.         *
+%   ********************************************************************
+
 
 \section{Research Schedule}
 \label{sec:schedule}
+The first main phase of the research will be implementation of the baseline model
+presented by Caiani et al. This involves obtaining a complete understanding of the
+ equations, decisions, and theory that motivate the design of their model and
+ implementing the model in Java. This will likely be the longest phase of the
+ research. The first part of this main phase will involve prototyping the agents
+ of the model with simplified behaviors. In this prototype the behaviors of the
+ agents will likely be limited in their adaptive capability and have simpler
+ decision rules, and is intended to serve as a check for the balance sheet tracking
+ and to increase familiarity and experience programming agent behavior. After
+ the model has been implemented and tested, the proposed extensions to the model
+ will be created. Implementation of the extensions will require additional
+ reading behind the theory of different types of goods and wealth and income
+ based consumption decisions by individuals. Once the extensions have been
+ implemented and validated, the simulations using minimum wage shocks will be run,
+ the results will be collected, and then formatted for the final research document.
 
-Identify the main phases and tasks of your research project and set deadlines
-for when you will be able to complete each of these items.
+\begin{table}[htbp]
+\centering
+\begin{tabular}{|c||c|c|}
+\hline
+\bf Task & \bf Begin Date & \bf End Date\\\hline\hline
+Proposal Defense & Early Nov. & Mid Nov.\\\hline
+Prototype Model & Late Nov. & Late Dec.\\\hline
+Two Thesis Chapters & Late Nov. & Mid Dec. \\\hline
+Benchmark Model & Late Dec. & Mid Jan.\\\hline
+Extended Model & Mid Jan. & Mid Feb.\\\hline
+Minimum Wage Exp. & Mid Feb. & Early Mar..\\\hline
+Thesis paper writing & Mid Jan. & Mid Apr. \\\hline
+\end{tabular}
+\caption{Table 1: Proposed Work Schedule}
+\label{intro-tab1}
+\end{table}
+
 
 \section{Conclusion}
 \label{sec:conclusion}
@@ -574,9 +715,16 @@ for when you will be able to complete each of these items.
 %   * Enter the text of your concluding section section here.          *
 %   ********************************************************************
 
-Provide a summary of your proposed research and suggest the impact that it may
-have on the discipline of computer science. If possible, you may also suggest
-some areas for future research.
+
+Overall, the proposed senior thesis aims to extend a benchmark ABM detailed
+by Caiani et al. by adding increased heterogeneity at the consumption firm level
+through the addition of different types of goods produced, and changing household
+consumption behavior to reflect this change. This extended model will be used to
+investigate the effects of minimum wage shocks on the employment level, employment
+ growth, and income distribution of the model economy in order to better understand
+ the relationship between minimum wage and employment and the impacts of this type
+ of policy. It’s main contributions are the the ABM literature through the extension
+ of an existing model and to the labor economics literature.
 
 \bibliographystyle{plain}
 \bibliography{senior_thesis_proposal}
