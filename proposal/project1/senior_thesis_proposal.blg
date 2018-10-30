@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: senior_thesis_proposal.aux
+The style file: plain.bst
+Database file #1: senior_thesis_proposal.bib
+I was expecting a `,' or a `}'---line 308 of file senior_thesis_proposal.bib
+ : 
+ : author={Meer,Jonathan and West,Jeremy},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 364 of file senior_thesis_proposal.bib
+ : 
+ : author={Bakhtiari,Sadegh and Meisami,Hossein},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in Bakhtiari-islamic-paper
+Warning--to sort, need author or key in Meer-dynamics-paper
+Warning--empty author in Bakhtiari-islamic-paper
+Warning--empty title in Bakhtiari-islamic-paper
+Warning--empty journal in Bakhtiari-islamic-paper
+Warning--empty year in Bakhtiari-islamic-paper
+Warning--empty author in Meer-dynamics-paper
+Warning--empty title in Meer-dynamics-paper
+Warning--empty journal in Meer-dynamics-paper
+Warning--empty year in Meer-dynamics-paper
+Warning--empty journal in Braun-Munzinger-bond-paper
+Warning--there's a number but no volume in Kanellopoulos-greece-paper
+You've used 35 entries,
+            2118 wiz_defined-function locations,
+            732 strings with 11169 characters,
+and the built_in function-call counts, 11749 in all, are:
+= -- 1156
+> -- 575
+< -- 3
++ -- 231
+- -- 192
+* -- 925
+:= -- 1977
+add.period$ -- 102
+call.type$ -- 35
+change.case$ -- 198
+chr.to.int$ -- 0
+cite$ -- 47
+duplicate$ -- 403
+empty$ -- 883
+format.name$ -- 192
+if$ -- 2374
+int.to.chr$ -- 0
+int.to.str$ -- 35
+missing$ -- 35
+newline$ -- 174
+num.names$ -- 66
+pop$ -- 169
+preamble$ -- 1
+purify$ -- 165
+quote$ -- 0
+skip$ -- 273
+stack$ -- 0
+substring$ -- 807
+swap$ -- 50
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 140
+warning$ -- 12
+while$ -- 119
+width$ -- 37
+write$ -- 370
+(There were 2 error messages)
