@@ -161,7 +161,8 @@
   An explanation of agent based models and a review of their history and application
   in general economics and labor economics is provided. The general methods of the
   research are discussed and include an overview of the benchmark model as well
-  as details regarding the extensions to be implemented.
+  as details regarding the extensions to be implemented and the programming tools and
+  languages to be used.
 \end{quote}
 
 \section{Introduction}
@@ -248,7 +249,7 @@ authors and the proposed research.
 
 Economics has a rich history of a variety of models used to abstract and explain
 the complicated interactions we observe in economies. One type of model that
-gained popularity in the early 2000’s is the Dynamic Stochastic General Equilibrium
+gained popularity in the early 2000`s is the Dynamic Stochastic General Equilibrium
 (DSGE) model. This type of model applied the basic supply and demand mechanism
 described in general equilibrium theory to model a changing model that accounted
 for the random occurence of specific events in the economy.~\cite{Haldane-history-paper}
@@ -273,18 +274,18 @@ budget constraints.~\cite{Haldane-history-paper}. DSGE models were particularly
 \begin{quote}
 `` We conclude that these extensions go some way in accounting for features of
 the Great Recession and its aftermath, but they do not suffice to address some of
-the major policy challenges…’’
+the major policy challenges...``
 \end{quote}
 
 Other shortcomings of the typical DSGE model were presented by other authors.
 The most important of these critiques is that the assumption that agents in an
 economy are perfectly rational, make optimal choices, and have a perfect understanding
-of the structure of the market in which they operate ~\cite{Haldane-history-paper} ~cite{Gualdi-tipping-paper}.
+of the structure of the market in which they operate ~\cite{Haldane-history-paper} ~\cite{Gualdi-tipping-paper}.
 This assumption is obviously a large one to make, and does not represent the
 reality observed in the economy. Other points of critique for DSGE models are
 their assumptions related to linearizing micro behavior to macro behavior,
 difficulty in being extended, and inability to portray markets that display
-disequilibrium ~\cite{Haldane-history-paper} ~cite{Gualdi-tipping-paper}.
+disequilibrium ~\cite{Haldane-history-paper} ~\cite{Gualdi-tipping-paper}.
 
 Agent Based Models (ABMs) provide a potential alternative to DSGE models and
 are able to address the critiques made towards DSGE models. ABMs are models
@@ -292,7 +293,7 @@ where agents are heterogeneous, have disperse interactions with one another,
  and their behaviors are adaptive and implemented with heuristics ~\cite{Haldane-history-paper}.
  As a result, ABMs do not necessarily make the assumption that agents are
  homogenous, rational, optimising, and have perfect information. The heterogeneity
- of the agents in ABMs also doesn’t assume that the behavior at the micro level
+ of the agents in ABMs also does not assume that the behavior at the micro level
  translates perfectly to the macro level; the characteristics of the macro level
  behaviour in ABMs are a result from the many interactions happening at the agent
  level and gives the possibility of unexpected and emergent behaviour ~\cite{Haldane-history-paper}.
@@ -306,7 +307,7 @@ Gualdi for examples of these kinds of papers ~\cite{Haldane-history-paper} ~\cit
 
 Another kind of paper in the economic ABM literature aims to implement an ABM with
 the specific goal of capturing some kind of characteristic about the construct
-that it is modelling. These papers don’t necessarily ask a question, but rather
+that it is modelling. These papers do not necessarily ask a question, but rather
 aim at creating a model that matches real world data as closely as possible. In
  his paper, Lengnick proposes an ABM to serve as a baseline model that includes
   households and firms as heterogeneous agents  ~\cite{Lengnick-baseline-paper}.
@@ -565,7 +566,7 @@ A more in depth explanation of their characteristics is as follows:
   \item \textbf{Firms:} The benchmark model includes two kinds of firms, consumption
   firms and capital firms  ~\cite{Caiani-benchmark-paper}. Consumption firms
   ``produce a homogeneous consumption good using labor and capital goods manufactured
-  by capital firms``, while capital firms ``produce a homogeneous capital good… ~\cite{Caiani-benchmark-paper}``
+  by capital firms``, while capital firms ``produce a homogeneous capital good ... ~\cite{Caiani-benchmark-paper}``
   In addition, these firms are able to apply for loans and retain their profits  ~\cite{Caiani-benchmark-paper}.
    The proposed research will extend the model by adding different kinds of
    consumption goods, so that consumption firms will no longer produce homogeneous
@@ -587,7 +588,7 @@ A more in depth explanation of their characteristics is as follows:
   ~\cite{Caiani-benchmark-paper}.`` The proposed research does not plan to extend
    the behavior or design of the Government agent from the benchmark.
 \item \textbf{Central Bank:} In the benchmark, the Central Bank ``issues legal
-currency, holds banks’ reserve accounts and the government account, accommodates
+currency, holds banks` reserve accounts and the government account, accommodates
 banks` demand for cash advances at a fixed discount rate, and possibly buy
 government bonds which have not been purchased by banks
 ~\cite{Caiani-benchmark-paper}.``The proposed research does not plan to
@@ -721,7 +722,7 @@ consumption behavior to reflect this change. This extended model will be used to
 investigate the effects of minimum wage shocks on the employment level, employment
  growth, and income distribution of the model economy in order to better understand
  the relationship between minimum wage and employment and the impacts of this type
- of policy. It’s main contributions are the the ABM literature through the extension
+ of policy. Its main contributions are the the ABM literature through the extension
  of an existing model and to the labor economics literature.
 
 \bibliographystyle{plain}
